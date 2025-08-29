@@ -11,26 +11,36 @@
 #include "hpm_mcl_common.h"
 
 #ifdef __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 
-void motor_function_init(void);
+    /* 电机功能初始化 */
+    void motor_function_init(void);
 
-void motor_speed_loop_init(void);
+    /* 电机速度环初始化 */
+    void motor_speed_loop_init(void);
 
-void motor_speed_loop_set(int32_t target_speed);
+    /* 设置电机目标速度 */
+    void motor_speed_loop_set(int32_t target_speed);
 
-void motor_postion_loop_init(void);
+    /* 电机位置环初始化 */
+    void motor_postion_loop_init(void);
 
-void motor_position_loop_set(int32_t target_position);
+    /* 设置电机目标位置 */
+    void motor_position_loop_set(int32_t target_position);
 
-int32_t motor_get_actual_speed(void);
+    /* 获取电机实际速度 */
+    int32_t motor_get_actual_speed(void);
 
-int32_t motor_get_actual_position(void);
+    /* 获取电机实际位置 */
+    int32_t motor_get_actual_position(void);
 
-void motor_enable(void);
+    /* 使能电机 */
+    void motor_enable(void);
 
-void motor_disable(void);
+    /* 失能电机 */
+    void motor_disable(void);
 
 #ifdef __cplusplus
 }

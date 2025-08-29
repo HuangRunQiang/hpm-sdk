@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "hpm_mcl_abz.h": "c",
+        "hpm_pwmv2_drv.h": "c"
+    }
+}
